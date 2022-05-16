@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello jQuery</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(
+            function() {
+                $.getJSON("http://localhost:8080/Sight/七堵區",{}, function(data){
+                    console.log(data);
+                });
+            });
+    </script>
+</html>
